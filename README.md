@@ -20,20 +20,25 @@ This design has three practical properties:
 ---
  
 ## Architecture
-<img width="4312" height="2099" alt="Picture1" src="https://github.com/user-attachments/assets/1ad6e10c-cc44-4b80-a550-32a6e5f9218b" />
+<img width="4312" height="2099" alt="Picture1" src="https://github.com/user-attachments/assets/53f32abc-6e4d-488b-8c0b-70860fc4faf2" />
+
 
 ## Results Summary
  
 **Overall performance** (HIT@5, m=6, max_history=50 vs LoRA r=8 at matched parameter budget):
-<img width="1954" height="664" alt="image" src="https://github.com/user-attachments/assets/147631f4-0685-4cb6-b6f5-d9764a81e88a" />
+<img width="977" height="332" alt="Screenshot 2026-06-05 at 14 40 06" src="https://github.com/user-attachments/assets/500c710e-0149-40f3-b4b3-42dbd0789bb2" />
+
 
 **Cold, Medium, and Warm User Analysis**
-<img width="872" height="778" alt="hit10_clean" src="https://github.com/user-attachments/assets/c547b20b-fc97-4f93-8b5d-60bd181b2393" />
+<img width="872" height="778" alt="hit10_clean" src="https://github.com/user-attachments/assets/f92cbf17-640d-4e8a-b26f-78f25036f59f" />
+
 
 **Efficiency (REPREC_cheap: train ℓ=10, evaluate ℓ=50)**
-<img width="2088" height="892" alt="warm_users_comparison" src="https://github.com/user-attachments/assets/dac9d159-08da-46da-8134-1bed9a1dff26" />
+<img width="2088" height="892" alt="warm_users_comparison" src="https://github.com/user-attachments/assets/2720b25e-2ed1-4bf9-a26d-1ba36028411a" />
 
-<img width="1514" height="336" alt="image" src="https://github.com/user-attachments/assets/d6fc0e7b-9bd1-407d-a483-910354ed6451" />
+
+<img width="1488" height="314" alt="image" src="https://github.com/user-attachments/assets/ddb35681-9dbf-401a-b29c-a6144d04d311" />
+
 
 Average speedup: 1.51× with 0.82×–1.00× of LoRA warm-user performance.
 
@@ -157,7 +162,8 @@ bash run_all_injector.sh --dataset beauty --num_soft_tokens 8
 The injector checkpoint is saved to `outputs/checkpoints/injector_m{m}_h{hidden}_hist{history}_{dataset}.pt`.
  
 ---
-<img width="3974" height="1007" alt="reprec_param_efficiency" src="https://github.com/user-attachments/assets/b9c6d576-1b3c-4da6-a5b5-736ec1368d5a" />
+<img width="3974" height="1007" alt="reprec_param_efficiency" src="https://github.com/user-attachments/assets/b8cd1687-3454-4558-a8be-0efe2ff2df9b" />
+
 
 
 ## Running the Pipeline (Step by Step)
